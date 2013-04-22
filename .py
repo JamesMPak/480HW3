@@ -2,6 +2,8 @@
 ======
 %cython
 cpdef int gcd(int a,int b):
+    cdef int t
+    cdef int r
     if a<b:
         temp = b
         b = a
